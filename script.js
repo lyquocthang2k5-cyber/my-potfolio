@@ -3,17 +3,17 @@ function toggleMenu() {
     navMenu.classList.toggle("active");
 }
 
-// Đóng menu khi bấm vào link trên mobile
+// Đóng menu khi bấm vào link trên điện thoại
 const navLinks = document.querySelectorAll("nav a");
 
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
         const navMenu = document.getElementById("navMenu");
         navMenu.classList.remove("active");
     });
 });
 
-// Thông báo khi gửi form
+// Form liên hệ
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function(event) {
