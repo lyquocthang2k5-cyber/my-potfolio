@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+
+        <nav id="navMenu">
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Xin chào, tôi là <span>Lý Quốc Thắng</span></h1>
+            <h2>Web Designer / Developer</h2>
+            <p>
+                Tôi yêu thích thiết kế giao diện website hiện đại, sáng tạo và thân thiện với người dùng.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">Xem dự án</a>
+                <a href="#contact" class="btn btn-outline">Liên hệ</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="hắn.jpg" alt="Avatar">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2 class="title">Giới thiệu</h2>
+
+        <div class="about-content">
+            <p>
+                Tôi là sinh viên ngành Công nghệ thông tin, có niềm đam mê với thiết kế website, lập trình front-end 
+                và xây dựng thương hiệu cá nhân. Tôi luôn học hỏi để tạo ra những sản phẩm đẹp, dễ dùng và có giá trị.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2 class="title">Kỹ năng</h2>
+
+        <div class="skill-list">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Xây dựng cấu trúc website rõ ràng.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Thiết kế giao diện đẹp và responsive.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Tạo hiệu ứng và tương tác cho website.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Design</h3>
+                <p>Tư duy bố cục, màu sắc và trải nghiệm người dùng.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2 class="title">Dự án</h2>
+
+        <div class="project-list">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Project 1">
+                <h3>Website Portfolio</h3>
+                <p>Trang web giới thiệu bản thân, kỹ năng và dự án cá nhân.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Project 2">
+                <h3>Website Bán Hàng</h3>
+                <p>Giao diện website thương mại điện tử đơn giản và hiện đại.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Project 3">
+                <h3>Landing Page</h3>
+                <p>Trang giới thiệu sản phẩm với bố cục bắt mắt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="title">Liên hệ</h2>
+
+        <form>
+            <input type="text" placeholder="Họ và tên">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Nội dung liên hệ"></textarea>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Lý Quốc Thắng. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
